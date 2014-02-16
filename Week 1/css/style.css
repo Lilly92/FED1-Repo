@@ -4,38 +4,41 @@ body {
 }
 
 #wrapper {
-	width: 90%;
+	width: 70%;
 	margin: 0 auto;
 	background-color: white;
-	opacity: 0.9;
+	opacity: 0.96;
 }
 
 h1 {
 	color: #6b7098;
-	padding: 5px 0 0 10px;
+	padding: 20px 0 0 30px;
 }
 
 h2 {
 	font-weight: bold;
-	padding: 10px 0 0 10px;
+	padding: 10px 0 0 30px;
 }
 h3 {
 		font-weight: bold;
-	padding: 10px 0 0 10px;
+	padding: 10px 0 0 30px;
 }
 
 p {
-	padding: 0 10px 0 10px;
+	padding: 0 10px 0 30px;
+	width: 60%;
 }
 
 .text1 {
 	position: relative;
 	top: -30px;
-	padding: 0 10px 0 10px;
+	padding: 10px 10px 0 30px;
 }
+
 .text1 h2 {
 	position:relative;
 	color: #6b7098;
+	padding: 10px 0 0 30px;
 }
 
 .cursive {
@@ -44,23 +47,40 @@ p {
 }
 
 aside {	
-	text-align: right;
+	position: absolute;
+	right: 5%;
+	border-left: solid;
+	border-color: #6b7098;
+	margin: 0 0% 0 60%;
 }
 
-aside nav {
-	position: static;
+aside p {
+	margin: 0px 0px 0px 0px;
+}
+
+.text {
+	position: relative;
+	top: 0px;
+	padding: 0px 0px 0 0px;
+}
+
+nav {
+	position: absolute;
+	top: 50px;
+	left: 40%;
 	color: #d8d7d6;
 	padding: 2px;
-	margin: 20px;
+	margin: 0 0 20px 10px;
+
 }
 
-aside nav ul {
+nav ul {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 }
 
-aside nav ul li {
+nav ul li {
 	display: inline;
 	border: solid #d8d7d6;
 	background-color: white;
@@ -70,5 +90,19 @@ aside nav ul li {
 footer {
 	position:absolute;
 	margin: -10px 0 0 0;
+}
 
+/*---------- table-layout --------*/
+table,th,td {
+	border:1px solid black;
+	border-collapse:collapse; /* enkele lijn, geen dubbele */
+	margin: 0 0 0 10px;
+}
+
+th,td {
+	padding:5px;
+}
+
+video {
+	margin: 0 0 0 10px;
 }
