@@ -1,0 +1,133 @@
+/*----------------------------- Form-layout ----------------------------------*/
+form {
+	max-width: 100%;
+}
+	fieldset {
+		border: 5px solid #6b7098;
+		width: 49em;
+		max-width: calc(100% - 20px);
+		box-sizing: border-box;
+		margin: 10px 0 0 10px;
+		background: #fff;	
+		animation:color 0.9s infinite;
+		-webkit-animation:color 0.9s infinite;
+		border-radius: 20px;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+	}
+	
+	@-webkit-keyframes color {
+	0% {background:yellow;}
+	25% {background:red;}
+	50% {background:green;}
+	75% {background:blue;}
+	100% {background:pink;}
+	}
+	fieldset:nth-child(n) {
+		animation-delay:0s;
+		-webkit-animation-delay:0s;
+	}
+	fieldset:nth-child(2) {
+		animation-delay:0.2s;
+		-webkit-animation-delay:0.2s;
+	}
+	fieldset:nth-child(3) {
+		animation-delay:0.1s;
+		-webkit-animation-delay:0.1s;
+		margin-bottom: 30px;
+	}
+	legend {
+		color: #333;
+		background: #fff;
+		border: 2px solid #6b7098;
+		padding: 2px 6px;
+		border-radius: 2px;
+	}
+		label { 
+			vertical-align: top;
+			display: inline-block; /*het is een inline maar het krijgt eigenschappen van een blocklevel element*/ 
+			text-align: right;
+			width: 29%;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+		}
+			input {	
+				width: 70%;
+				color: black;
+				background: #EFF9FF;
+				border: 1px solid #787878;
+				text-align: left;
+				padding: 3px;	
+				border-radius: 8px;
+				box-sizing: border-box; /* zorgt ervoor dat padding en border niet worden meegerekend bij de width */
+				
+			}
+
+/* 			tilde ~ alle nakomende elementen */ 
+
+/*				input:nth-of-type(1) {			Kan ook, maar ik gebruik child vanuit fieldset					
+					background: blue;
+			} */
+				input:nth-child(3) {
+					background-color: yellow;
+				}
+				input:nth-child(5) {
+					background-color: pink;
+				}
+				input:nth-child(7){
+					background-color: yellow;
+				}
+				input:nth-child(9) {
+					background-color: pink;
+				}
+				input:nth-child(11){
+					background-color: yellow;
+				}
+				input:nth-child(13) {
+					background-color: pink;
+				}
+				input:nth-child(15){
+					background-color: yellow;
+				}
+				input:nth-child(17) {
+					background-color: pink;
+				}
+				input:nth-child(19){
+					background-color: yellow;
+				}
+				input:nth-child(21) {
+					background-color: pink;
+				}
+				input:nth-child(23){
+					background-color: yellow;
+				}		
+				input:hover {
+					background-color: #BCE4FC;
+				}
+				input[type="checkbox"], 	/*alle input met type="checkbox" */
+				input[type="radio"] {		/*alle input met type="radio"    */
+					width: 3%; 
+					margin-left: 29%;
+				}
+				input[type="checkbox"]+label, /*alle input met type="checkbox" + label */
+				input[type="radio"]+label {   /*alle input met type="radio" + label */
+					width: 66%;
+					text-align: left;
+				}
+				textarea {
+					width: calc(69% + 8px);
+					background-color: #EFF9FF;
+					border-radius: 2px;
+					box-sizing: border-box;
+					border: 1px solid #787878;
+					resize: vertical;
+				}
+					textarea:hover {
+						background-color: #BCE4FC;
+					}
+				input[type="submit"] {
+					margin-left: 90%;
+					width: 34px;
+					display: block; /* dit is een inline en wordt een blocklevel*/
+					background-color: white;
+				}
+

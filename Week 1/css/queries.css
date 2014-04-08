@@ -1,0 +1,355 @@
+/* -------------------------- min-width: 450px tot 913px-------------------------------- */
+@media (min-width: 400px) {
+		/*-------------------------- NAVIGATION -------------------------------*/
+	nav {
+	position: relative;
+	color: #d8d7d6;
+	top: 0;
+	left: 0;
+	}
+
+	nav ul {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+	}
+		nav ul li {
+			/*display: inline; */
+		}
+			nav ul li a {
+				text-decoration: none;
+				border: 1px solid #d8d7d6;
+				background-color: white;
+				padding: 5px 3px 5px 3px;
+				margin: 0 0 4px 0;
+				display: inline-block;
+				color: #6b7098;
+			}
+
+		nav:nth-of-type(2) {
+			background-color: grey;
+			width: 100%;
+			position: relative;
+			margin: 0 0 0 0;
+			box-sizing: border-box; /*zorgt dat de border en padding bij mijn elemtent getrokken wordt. >ipv calc. - bla */
+		}
+
+		nav:nth-of-type(2) ul li a {
+			color: #333;
+			background-color: grey;
+			border: 0px;
+		}
+
+	aside {	
+		position: relative;
+		float: none;
+		border-left: solid;
+		border-color: #6b7098;
+		padding: 0 0 0 1%;
+		width: 50%;
+	}
+		aside header h1 {
+			background-color: transparent;
+			box-shadow: none !important;
+		}
+
+		aside h1 {
+			font-family: helvetica, sans-serif;
+			font-weight: bold;
+			padding: 0px 0 0 4px;
+			font-size: 14px;
+		}
+			aside h2 {
+				padding: 0 0 0 10px;
+			}
+			aside p {
+				padding: 0 0 0 10px;
+				font-size: 11px;
+			}
+
+		article {
+			width: 100%;
+
+}
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------- min-width: 913px tot 1400px-------------------------------- */
+@media (min-width: 913px) {
+
+	/*-------------------------- NAVIGATION -------------*/
+	nav {
+		position: relative;
+		color: #d8d7d6;
+		top: 0;
+		left: 0;
+	}
+
+	nav ul {
+		/*list-style-type: none; */
+		/*padding: 0px; */
+		/* margin: 0px; */
+	}
+		nav ul li {
+			/*display: inline; */
+		}
+			nav ul li a {
+				text-decoration: none;
+				border: 1px solid #d8d7d6;
+				background-color: white;
+				padding: 5px 3px 5px 3px;
+				display: inline-block;
+				color: #6b7098;
+			}
+
+		nav:nth-of-type(2) {
+			background-color: grey;
+			position: relative;
+			margin: 0 0 0 0;
+		}
+
+		nav:nth-of-type(2) ul li a {
+			color: #333;
+			background-color: grey;
+			border: 0px;
+		}
+		aside {	
+			position: relative;
+			top: 0%;
+			float: left;
+			border-left: solid;
+			border-color: #6b7098;
+			width: calc(29% - 2px); /*rekent uit */
+			padding: 0 0 0 1%;
+		}
+
+			aside h1:first-child {
+				margin: 10px 0 0 0;
+			}
+			aside h1 {
+				font-family: helvetica, sans-serif;
+				font-weight: bold;
+				padding: 0px 0 0 4px;
+				font-size: 14px;
+			}
+				aside h2 {
+					padding: 0 0 0 10px;
+				}
+				aside p {
+					padding: 0 0 0 10px;
+					font-size: 11px;
+				}
+
+		article {
+			width: 60%;
+		}
+}
+
+
+
+
+
+
+/* -------------------------- min-width: 1400px > ----------------------------------------------- */
+@media (min-width: 1400px) {
+	body {
+	margin: 0 auto;
+	line-height: 1.5;
+	font-family: 'Sintony', sans-serif;
+	background-color: #6b7098;
+	background-image: url('../img/snow1.png'), url('../img/snow2.png'), url('../img/snow3.png');
+	-webkit-animation: snow 20s linear infinite;
+	height: 100%;
+}
+
+@-webkit-keyframes snow { 
+ 	0% {background-position: 0px 0px;}
+ 	100% {background-position: 500px 1000px, 400px 400px, 300px 300px;} 
+}
+	h1 {
+		color: #6b7098;
+		padding: 40px 0 0 30px;
+		font-size: 50px;
+		margin: 0 0 10px 0;
+		font-family: 'Sigmar One', cursive;
+		background-color: rgb(255, 255, 255);
+		/* box-shadow:30px 50px 80px 63px white; *//* niet meer nodig het staat bij .bordershadow; */
+
+	}
+		.bordershadow h1 { /* dit wordt getoond als border shadow ondersteunt wordt. */
+				box-shadow:30px 50px 80px 63px white;	
+		}
+		.no-bordershadow h1 { /* dit als het niet ondersteunt wordt */
+				border-bottom: solid grey;
+		}
+
+	h2 {
+		font-weight: bold;
+		padding: 10px 0 0 30px;
+	}
+	h3 {
+		font-weight: bold;
+		padding: 10px 0 0 30px;
+	}
+	p {
+		padding: 0 10px 0 30px;
+	}
+	main {
+		width: 70%;
+		margin: 0 auto;
+		background-color: rgba(194, 194 ,194, 0.90);
+		clear: both; /* float > neemt normale hoogte aan (werkt niet op breedte)*/ 
+		overflow: auto; /* pakt ook de float. */
+	}
+
+	img {
+		margin: 0 0 0 2em;
+		width: 80%;
+	}
+
+	video {
+		margin: 0 0 0 2em;
+		width: calc(100% - 47px);
+	}
+
+/*----------------------------- elements ------------------*/
+article {
+	float: left;
+	width: 60%;
+	position: relative;
+	top: 0em;
+}
+	section {
+		top: 0px;
+		padding: 0px 0px 0 0px;
+	}
+
+		section em {
+			text-align: center;
+			font-style: italic;
+		}
+
+		section h2 {
+			color: #6b7098;
+			padding: 10px 0 0 30px
+		}
+
+
+
+/*-------------------------- NAVIGATION ----------------*/
+nav {
+position: absolute;
+top: 70px;
+left: 40%;
+color: #d8d7d6;
+padding: 2px;
+margin: 0 0 10px 30px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+	nav ul li {
+		display: inline;
+	}
+		nav ul li a {
+			text-decoration: none;
+			border: 1px solid #d8d7d6;
+			background-color: white;
+			padding: 5px 3px 5px 3px;
+			display: inline-block;
+			color: #6b7098;
+		}
+
+	nav:nth-of-type(2) {
+		background-color: grey;
+		width: 100%;
+		position: relative;
+		margin: -10px 0px 0px 0px;
+	}
+
+	nav:nth-of-type(2) ul li a {
+		color: #333;
+		background-color: grey;
+		border: 0px;
+	}
+/*----------------------------- ASIDE ------------------*/
+aside {	
+	position: relative;
+	top: 0%;
+	float: left;
+	border-left: solid;
+	border-color: #6b7098;
+	width: calc(29% - 2px); /*rekent uit */
+	padding: 0 0 0 1%;
+}
+
+	aside h1:first-child {
+		margin: 10px 0 0 0;
+	}
+	aside h1 {
+		font-family: helvetica, sans-serif;
+		font-weight: bold;
+		padding: 0px 0 0 4px;
+		font-size: 14px;
+	}
+		aside h2 {
+			padding: 0 0 0 10px;
+		}
+		aside p {
+			padding: 0 0 0 10px;
+			font-size: 11px;
+		}
+/*------------------------------ FOOTER -------------------*/
+footer {
+	background-color: white;
+	width: 70%;
+	margin: 0 auto;
+}
+	footer h1 {
+		color: #6b7098;
+		font-size: 14px;
+		width: 50%;
+		padding: 0;
+		margin: 0 0 10px 22px;
+		font-family: 'Sigmar One', cursive;
+		background-color: rgb(255, 255, 255);
+	}
+	footer p { /* alle elementen die erna komen */
+		font-size: 11px;
+			width: 50%;
+	}
+		footer a {
+			font-size: 11px;
+		}
+		footer ul {
+			font-size: 11px;
+		}
+		footer form {
+		}
+			footer input:nth-child(n) {
+				display: inline-block;
+				width: 30%;
+				padding: 0;
+				margin: 0;
+
+			}
+			footer input:nth-of-type(2) {
+				width: 10%;
+				margin: 0;
+				padding: 0;
+			}
+
+	article {
+		width: 60%;
+	}
+}
